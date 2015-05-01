@@ -1,0 +1,12 @@
+Source: ros-jade-nao-dashboard
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-diagnostic-aggregator, ros-jade-diagnostic-msgs, ros-jade-naoqi-msgs, ros-jade-pluginlib, ros-jade-rqt-robot-monitor
+Homepage: http://ros.org/wiki/nao_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-jade-nao-dashboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-diagnostic-aggregator, ros-jade-diagnostic-msgs, ros-jade-naoqi-msgs, ros-jade-rqt-robot-dashboard, ros-jade-rqt-robot-monitor
+Description: nao_dashboard is a GUI for monitoring the state of a Nao robot. It is a port of pr2_dashboard and shows status information like battery status, joint temperatures, and joint stiffness, as well as integrating ROS tools like rxconsole and robot_monitor.
